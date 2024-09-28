@@ -15,7 +15,7 @@ export default function HomePage() {
     id: index + 1,
     url,
   }));
-  // trigger
+
   return (
     <main>
       <div className="grid grid-cols-4 gap-4">
