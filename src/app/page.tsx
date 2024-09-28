@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { db } from "~/server/db";
 
 export const dynamic = "force-dynamic";
@@ -11,12 +12,17 @@ export default async function HomePage() {
   return (
     <main>
       <div className="grid grid-cols-4 gap-4">
-        {images.map((item) => (
-          <div key={item.id} className="flex flex-col">
-            <img src={item.url} alt={item.name} />
-            <div>{item.name}</div>
-          </div>
-        ))}
+        <SignedOut>
+          <p className="text-center text-xl">Please sign in</p>
+        </SignedOut>
+        <SignedIn>
+          {images.map((item) => (
+            <div key={item.id} className="flex flex-col">
+              <img src={item.url} alt={item.name} />
+              <div>{item.name}</div>
+            </div>
+          ))}
+        </SignedIn>
       </div>
     </main>
   );
