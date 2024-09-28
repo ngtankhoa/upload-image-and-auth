@@ -2,8 +2,8 @@
 
 ## TODO
 
-- [ ] Make it deploy
-- [ ] Scafold basic ui with mock data
+- [x] Make it deploy
+- [x] Scafold basic ui with mock data
 - [ ] Tidy up build process
 - [ ] Actually setup database (Vercel postgres)
 - [ ] Attach database to UI
