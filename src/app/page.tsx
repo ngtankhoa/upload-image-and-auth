@@ -13,7 +13,7 @@ export default async function HomePage() {
     <main>
       <div className="grid grid-cols-4 gap-4">
         <SignedOut>
-          <p className="text-center text-xl">Please sign in</p>
+          <p className="text-center text-xl">Please sign in above</p>
         </SignedOut>
         <SignedIn>
           {images.map((item) => (
