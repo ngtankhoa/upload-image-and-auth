@@ -8,7 +8,10 @@ async function Images() {
   const images = await getMyImages();
   console.log(images);
   return images.map((item) => (
-    <div key={item.id} className="flex flex-col border border-slate-200 p-2">
+    <div
+      key={item.id}
+      className="flex flex-col rounded-md border border-slate-200 p-2"
+    >
       <div className="relative h-48 w-full">
         <Image src={item.url} alt={item.name} fill objectFit="contain" />
       </div>

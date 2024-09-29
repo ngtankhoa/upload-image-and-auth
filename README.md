@@ -11,7 +11,7 @@
 - [x] Add image upload
 - [x] "tain" (server only)
 - [x] Use Next/Image
-- [ ] Error management (w/ Sentry)
+- [x] Error management (w/ Sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Update upload button to be less cringe
 - [ ] Analytics (w/ Posthog)
