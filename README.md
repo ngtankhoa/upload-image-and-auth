@@ -8,9 +8,9 @@
 - [x] Actually setup database (Vercel postgres)
 - [x] Attach database to UI
 - [x] Add authentication (w/ clerk)
-- [ ] Add image upload
-- [ ] "tain" (server only)
-- [ ] Use Next/Image
+- [x] Add image upload
+- [x] "tain" (server only)
+- [x] Use Next/Image
 - [ ] Error management (w/ Sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Update upload button to be less cringe
