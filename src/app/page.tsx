@@ -15,7 +15,12 @@ async function Images() {
     >
       <div className="relative h-48 w-full">
         <Link href={`/img/${item.id}`}>
-          <Image src={item.url} alt={item.name} fill objectFit="contain" />
+          <Image
+            src={item.url}
+            alt={item.name}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Link>
       </div>
       <div className="line-clamp-1">{item.name}</div>
