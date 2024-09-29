@@ -12,7 +12,7 @@
 - [x] "tain" (server only)
 - [x] Use Next/Image
 - [x] Error management (w/ Sentry)
-- [ ] Routing/image page (parallel route)
+- [x] Routing/image page (parallel route)
 - [ ] Update upload button to be less cringe
 - [ ] Analytics (w/ Posthog)
 - [ ] Delete button (w/ server action)

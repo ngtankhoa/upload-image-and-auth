@@ -1,6 +1,7 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { getMyImages } from "~/server/queries";
 import Image from "next/image";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +14,9 @@ async function Images() {
       className="flex flex-col rounded-md border border-slate-200 p-2"
     >
       <div className="relative h-48 w-full">
-        <Image src={item.url} alt={item.name} fill objectFit="contain" />
+        <Link href={`/img/${item.id}`}>
+          <Image src={item.url} alt={item.name} fill objectFit="contain" />
+        </Link>
       </div>
       <div className="line-clamp-1">{item.name}</div>
     </div>
