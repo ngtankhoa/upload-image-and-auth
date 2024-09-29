@@ -23,7 +23,8 @@ const useUploadThingInputProps = (...args: Input) => {
   return {
     inputProps: {
       onChange,
-      multiple: ($ut.permittedFileInfo?.config?.image?.maxFileCount ?? 1) > 1,
+      multiple2: $ut.routeConfig?.image?.maxFileCount ?? 1 > 1,
+      // multiple: ($ut.permittedFileInfo?.config?.image?.maxFileCount ?? 1) > 1,
       accept: "image/*",
     },
     isUploading: $ut.isUploading,

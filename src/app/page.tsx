@@ -30,7 +30,7 @@ async function Images() {
 
 export default async function HomePage() {
   return (
-    <main>
+    <div className="p-2">
       <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
         <SignedOut>
           <p className="text-center text-xl">Please sign in above</p>
@@ -39,6 +39,6 @@ export default async function HomePage() {
           <Images />
         </SignedIn>
       </div>
-    </main>
+    </div>
   );
 }
