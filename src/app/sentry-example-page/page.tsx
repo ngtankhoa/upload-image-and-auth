@@ -2,10 +2,15 @@
 
 import Head from "next/head";
 import * as Sentry from "@sentry/nextjs";
+import posthog from "posthog-js";
 
 export default function Page() {
+  function testPostHog() {
+    posthog.capture("my event", { property: "value" });
+  }
   return (
     <div>
+      <button onClick={testPostHog}>Test PostHog</button>
       <Head>
         <title>Sentry Onboarding</title>
         <meta name="description" content="Test Sentry for your Next.js app!" />
