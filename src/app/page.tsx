@@ -12,16 +12,16 @@ async function Images() {
       key={item.id}
       className="flex flex-col rounded-md border border-slate-200 p-2 px-2.5"
     >
-      <div className="relative h-48 w-full">
-        <Link href={`/img/${item.id}`}>
+      <Link href={`/img/${item.id}`}>
+        <div className="relative h-48 w-full">
           <Image
             src={item.url}
             alt={item.name}
             fill
             style={{ objectFit: "contain" }}
           />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className="line-clamp-1">{item.name}</div>
     </div>
   ));
