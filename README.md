@@ -16,4 +16,4 @@
 - [x] Update upload button to be less cringe
 - [x] Analytics (w/ Posthog)
 - [x] Delete button (w/ server action)
-- [ ] Rate limiting (w/ uptash)
+- [x] Rate limiting (w/ uptash)
