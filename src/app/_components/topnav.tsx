@@ -10,14 +10,16 @@ export function TopNav() {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          {/* <UploadButton
+          <div className="flex items-center gap-2">
+            {/* <UploadButton
             endpoint="imageUploader"
             onClientUploadComplete={() => {
               router.refresh();
             }}
           /> */}
-          <SimpleUploadButton />
-          <UserButton />
+            <SimpleUploadButton />
+            <UserButton />
+          </div>
         </SignedIn>
       </div>
     </nav>
