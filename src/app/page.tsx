@@ -7,7 +7,6 @@ export const dynamic = "force-dynamic";
 
 async function Images() {
   const images = await getMyImages();
-  console.log(images);
   return images.map((item) => (
     <div
       key={item.id}

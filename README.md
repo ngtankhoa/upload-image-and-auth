@@ -13,7 +13,7 @@
 - [x] Use Next/Image
 - [x] Error management (w/ Sentry)
 - [x] Routing/image page (parallel route)
-- [ ] Update upload button to be less cringe
-- [ ] Analytics (w/ Posthog)
-- [ ] Delete button (w/ server action)
+- [x] Update upload button to be less cringe
+- [x] Analytics (w/ Posthog)
+- [x] Delete button (w/ server action)
 - [ ] Rate limiting (w/ uptash)
